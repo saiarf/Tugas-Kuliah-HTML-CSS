@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+}
+.container .left_side{
+    position: relative;
+    background: #f48c06;
+    padding: 40px;
+}
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.profiletext .imgbx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2{
+    color: #03071e;
+    font-size: 14pt;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 25px;
+}
+.profiletext h2 span{
+    font-size: 14pt;
+    font-weight: 300;
+}
+.contactinfo{
+    padding-top: 40px;
+}
+.title{
+    color: #03071e;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactinfo ul{
+    position: relative;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #6a040f;
+}
+.contactinfo ul li span{
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.contactinfo.education li{
+    margin-bottom: 15px;
+}
+.contactinfo.education h5{
+    color: #6a040f;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+.contactinfo.education h4{
+    color: white;
+    font-weight: 500;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.contactinfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+    margin-top: 5px;
+}
+.contactinfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #6a040f;
+}
+
+.container .right_side{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 40px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #6a040f;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: rgb(27, 26, 26);
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_organization{
+    min-width: 210px;
+}
+.about .box .year_organization h5{
+    text-transform: uppercase;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #9d0208;
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: rgb(61, 60, 60);
+    font-weight: 500;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f48c06;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: #6a040f;
+    font-size: 18px;
+    width: 20px;
+}
